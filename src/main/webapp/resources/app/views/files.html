@@ -3,14 +3,9 @@
 <div class="row">
     <div class="span6" ng-controller="DriveCtrl">
         <div class="control-group">
-            <li ng-repeat="item in items">
+            <li ng-repeat="item in files.items">
                 <a ng-href="{{item.selfLink}}" target="_blank">
                     <p>{{item.title}}</p>
-                </a>
-            </li>
-            <li ng-repeat="file in files">
-                <a ng-href="{{file.selfLink}}" target="_blank">
-                    <p>{{file.title}}</p>
                 </a>
             </li>
         </div>

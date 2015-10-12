@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>Spring Social Google Examples</title>
+        <title>TPDSSM2015 Joaquin Gonzalez | Joaquin Costa | Aldo Vizcaino</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="resources/app/styles/bootstrap.min.css"/>
@@ -24,8 +24,6 @@
 			<div class="navbar-inner">
 				<div class="container">
 					<ul class="nav">
-						<li><a href="#/plus/people">Google+</a></li>
-						<li><a href="#/tasks">Tasks</a></li>
                         <li><a href="#/drive/files">Files</a></li>
                     </ul>
 					
@@ -48,23 +46,7 @@
 
         <!-- build:js scripts/scripts.js -->
         <script src="resources/app/scripts/client.js"></script>
-        <script src="resources/app/scripts/controllers/peopleform.js"></script>
-        <script src="resources/app/scripts/controllers/paginglist.js"></script>
-        <script src="resources/app/scripts/controllers/peoplesearch.js"></script>
-        <script src="resources/app/scripts/controllers/person.js"></script>
-        <script src="resources/app/scripts/controllers/plusoners.js"></script>
-        <script src="resources/app/scripts/controllers/resharers.js"></script>
-        <script src="resources/app/scripts/controllers/circles.js"></script>
-        <script src="resources/app/scripts/controllers/activitiesform.js"></script>
-        <script src="resources/app/scripts/controllers/activitieslist.js"></script>
-        <script src="resources/app/scripts/controllers/activitiessearch.js"></script>
-        <script src="resources/app/scripts/controllers/activity.js"></script>
-        <script src="resources/app/scripts/controllers/tasklists.js"></script>
-        <script src="resources/app/scripts/controllers/tasklist.js"></script>
-        <script src="resources/app/scripts/controllers/tasks.js"></script>
-        <script src="resources/app/scripts/controllers/task.js"></script>
         <script src="resources/app/scripts/controllers/files.js"></script>
-        <script src="resources/app/scripts/controllers/moments.js"></script>
         <!-- endbuild -->
 
     </body>

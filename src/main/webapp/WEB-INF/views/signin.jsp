@@ -8,7 +8,7 @@
 	</jsp:text>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-<title>Spring Social Google Example</title>
+	<title>TPDSSM2015 Joaquin Gonzalez | Joaquin Costa | Aldo Vizcaino</title>
 <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="resources/css/style.css" rel="stylesheet"/>
 </head>
@@ -17,6 +17,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="span14 columns offset2">
+				<p>TPDSSM2015 Joaquin Gonzalez | Joaquin Costa | Aldo Vizcaino</p>
 				<form action="signin/google" method="POST">
 				    <button type="submit" class="btn btn-large btn-primary">Sign in with Google</button>
 				    <input type="hidden" name="scope" value="email https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/tasks https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/latitude.all.best" />

@@ -41,7 +41,7 @@ public class MainConfig {
 	@Bean(destroyMethod = "shutdown")
 	public DataSource dataSource() {
 		EmbeddedDatabaseFactory factory = new EmbeddedDatabaseFactory();
-		factory.setDatabaseName("spring-social-quickstart");
+		factory.setDatabaseName("tpdssd-quickstart");
 		factory.setDatabaseType(EmbeddedDatabaseType.H2);
 		factory.setDatabasePopulator(databasePopulator());
 		return factory.getDatabase();

@@ -42,8 +42,6 @@ import com.tpdssd.user.User;
 
 
 /**
- * Spring Social Configuration.
- * 
  * @author Keith Donald
  */
 @Configuration
@@ -63,7 +61,10 @@ public class SocialConfig {
 	@Bean
 	public ConnectionFactoryLocator connectionFactoryLocator() {
 		ConnectionFactoryRegistry registry = new ConnectionFactoryRegistry();
-		registry.addConnectionFactory(new GoogleConnectionFactory("532257042908-905s9h7gvmtu0mep5m0e5ums8l7f9tt2.apps.googleusercontent.com", "qgxnkfDpro-Me7ii2UzcNwkA"));
+		// openshift
+		// registry.addConnectionFactory(new GoogleConnectionFactory("532257042908-905s9h7gvmtu0mep5m0e5ums8l7f9tt2.apps.googleusercontent.com", "qgxnkfDpro-Me7ii2UzcNwkA"));
+		// local
+		registry.addConnectionFactory(new GoogleConnectionFactory("532257042908-1tr5pbgqgfeq4239do2n5m7a88jss8kr.apps.googleusercontent.com", "d8Vhe9sJKxhh4AkS0ukaVg_1"));
 		return registry;
 	}
 	
