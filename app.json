@@ -1,27 +1,6 @@
 {
-<<<<<<< HEAD
-  "name": "Heroku Tomcat",
-  "description": "Heroku Java Web Application Using Embedded Tomcat",
-  "repository": "https://github.com/heroku/devcenter-embedded-tomcat",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Tomcat-logo.svg",
-  "keywords": [
-    "java",
-    "tomcat"
-=======
-  "name": "tpdssd",
-  "scripts": {
-  },
-  "env": {
-  },
-  "formation": {
-  },
-  "addons": [
-    "heroku-postgresql"
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/java"
-    }
->>>>>>> 1d4c728e7e6144f3545f9719a1c7b05d51c05adb
-  ]
+  "name": "Start on Heroku: Java",
+  "description": "A barebones Java app, which can easily be deployed to Heroku.",
+  "image": "heroku/java",
+  "addons": [ "heroku-postgresql" ]
 }
