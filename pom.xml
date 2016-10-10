@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>tpdssd</groupId>
 	<artifactId>tpdssd</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<version>1.0</version>
 	<name>tpdssd</name>
 	<repositories>
@@ -152,11 +152,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-			</resource>
-		</resources>
+		<finalName>embeddedTomcatSample</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -172,7 +168,7 @@
 					</programs>
 				</configuration>
 				<executions>
-					<execution> 
+					<execution>
 						<phase>package</phase>
 						<goals>
 							<goal>assemble</goal>
@@ -192,48 +188,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>${java-version}</source>
-					<target>${java-version}</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.0</version>
-				<configuration>
-					<path>/</path>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
-	<profiles>
-		<profile>
-			<!-- When built in OpenShift the 'openshift' profile will be used when 
-				invoking mvn. -->
-			<!-- Use this profile for any OpenShift specific customization your app 
-				will need. -->
-			<!-- By default that is to put the resulting archive into the 'webapps' 
-				folder. -->
-			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
-			<id>openshift</id>
-			<build>
-				<finalName>tpdssd</finalName>
-				<plugins>
-					<plugin>
-						<artifactId>maven-war-plugin</artifactId>
-						<version>2.1.1</version>
-						<configuration>
-							<outputDirectory>webapps</outputDirectory>
-							<warName>ROOT</warName>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 </project>
