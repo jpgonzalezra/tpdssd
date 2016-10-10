@@ -35,5 +35,13 @@ public class DriveController {
 	public Resource downloadfile(@PathVariable String id) {
 		return google.driveOperations().downloadFile(id);
 	}
+
+	@ResponseBody
+	@RequestMapping("/createfile/{id}")
+	public void createfile(@PathVariable String id) {
+
+		DriveFile file = DriveFile.builder().setTitle(id).setDescription("lalalalla").build();
+		google.driveOperations().createFileMetadata(file);
+	}
 	
 }
