@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.settings
 /.classpath
 /.project
@@ -20,3 +21,17 @@ artifact.info
 /.idea/*
 /.idea
 .springBeans
+=======
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> d2e47178dfd25a19b7b80ea35805c9984e6f58f6
