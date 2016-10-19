@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>TPDSSM2015 Joaquin Gonzalez 9344/5 | </title>
+        <title>TPDSSM2016</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="resources/app/styles/bootstrap.min.css"/>

@@ -8,7 +8,7 @@
 	</jsp:text>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-	<title>TPDSSM2015 Joaquin Gonzalez | Joaquin Costa | Aldo Vizcaino</title>
+	<title>TPDSSM2016</title>
 <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="resources/css/style.css" rel="stylesheet"/>
 </head>
