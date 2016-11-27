@@ -40,7 +40,7 @@ public class DriveController {
 	@RequestMapping("/createfile/{id}")
 	public String createfile(@PathVariable String id) {
 
-		DriveFile file = DriveFile.builder().setTitle(id).setDescription("Trabajo").build();
+		DriveFile file = DriveFile.builder().setTitle(id).setDescription("Trabajo").setMimeType("application/vnd.google-apps.document").build();
 		DriveFile fileMetadata = google.driveOperations().createFileMetadata(file);
 		DriveFile driveFile = google.driveOperations().getFile(fileMetadata.getId());
 		return driveFile.getAlternateLink();
