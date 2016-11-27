@@ -38,10 +38,11 @@ public class DriveController {
 
 	@ResponseBody
 	@RequestMapping("/createfile/{id}")
-	public void createfile(@PathVariable String id) {
+	public String createfile(@PathVariable String id) {
 
-		DriveFile file = DriveFile.builder().setTitle(id).setDescription("lalalalla").build();
+		DriveFile file = DriveFile.builder().setTitle(id).setDescription("Trabajo").build();
 		google.driveOperations().createFileMetadata(file);
+		return google.driveOperations().getFile(id).getSelfLink();
 	}
 	
 }
